@@ -1,24 +1,28 @@
-def isavowel(letterin):
-    if letterin in "aeiou":
-        return True
-    else:
-        return False
+class Lettertest:
 
-def isaconsonant(letterin):
-    if letterin in "bcdfghjklmnpqrstvwxyz":
-        return True
-    else:
-        return False
+    stringofletters = "AEIOU"
 
-def isletterwithonlystraightlines(letterin):
-    if letterin.upper() in "AEFHIKLMNTVWXYZ":
-        return True
-    else:
-        return False
-        
+    def testaletter(self,letterin):
+        if letterin.upper() in self.stringofletters:
+            return True
+        else:
+            return False
+
+
+
 
 testletter = "f"
-vowelresult = isavowel(testletter)
-consonantresult = isaconsonant(testletter)
+isavowel = Lettertest()
+isaconsonant = Lettertest()
+isaletterwithoneendpoint = Lettertest()
+isaconsonant.stringofletters = "BCDFGHJKLMNPQRSTVWXYZ"
+isaletterwithoneendpoint.stringofletters = "P"
+vowelresult = isavowel.testaletter(testletter)
+print(isavowel.stringofletters)
+print(isaconsonant.stringofletters)
+print(isaletterwithoneendpoint.stringofletters)
+
+#vowelresult = isavowel(testletter)
+#consonantresult = isaconsonant(testletter)
 print(testletter,"tested as a vowel: ", vowelresult)
-print(testletter,"tested as a consonant: ", consonantresult)
+#print(testletter,"tested as a consonant: ", consonantresult)
