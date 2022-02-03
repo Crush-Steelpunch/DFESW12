@@ -11,10 +11,13 @@ print(var1 + var1a)
 print(var2 + var3)
 print("this is the output of two data types: ", var1 , var2)
 
+
 inputvar1 = input("TYPE!: ")
 print("You typed in: " + inputvar1)
 
-
+var1.upper()
+len(var1)
+print(var1)
 
 
 
