@@ -1,6 +1,6 @@
-# import pdb
+import pdb
 
-# pdb.set_trace()
+pdb.set_trace()
 
 class Category:
 

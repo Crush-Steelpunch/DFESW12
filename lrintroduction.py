@@ -1,3 +1,6 @@
+import pdb
+
+pdb.set_trace()
 
 var1 = "01010110001"    # String
 var1a = '01010110001'    # String

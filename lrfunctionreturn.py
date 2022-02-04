@@ -1,3 +1,6 @@
+import pdb
+pdb.set_trace()
+
 def reverseaword(inword):
     lenword = len(inword)-1
     revword = ""
